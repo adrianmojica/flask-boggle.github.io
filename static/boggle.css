@@ -1,0 +1,109 @@
+html {
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+}
+
+body {
+    animation: colorchange 60s;
+}
+
+.error {
+    background-color: red;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    width: 300px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.success {
+    background-color: green;
+    color:white;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.game-over {
+    background-color: blueviolet;
+    color:white;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.board{
+    width: 300px;
+    height: 300px;
+    border: 7px solid blueviolet;
+    border-radius: 10px;
+    margin-top: 60px;
+    background: blueviolet;
+    font-size: 30px;
+}
+
+table tr td {
+    text-align: center;
+    border: 1px solid blueviolet;
+    background-color: honeydew;
+}
+
+section {
+    display: block;
+}
+
+.sect {
+    display: inline-block;
+}
+
+.scores {
+    position: absolute;
+    margin-top:50px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.timer {
+    box-shadow: 0 0 0 0 rgb(134, 7, 230);
+    transform: scale(1);
+    border-radius: 53px;
+    font-size: 27px;
+    animation: pulse 2s infinite;
+    margin-left: 10px;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgb(134, 7, 230);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgb(134, 7, 230);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgb(134, 7, 230);
+	}
+}
+
+@keyframes colorchange{
+      0%   {background: rgba(185, 33, 33, 0.849);}
+      25%  {background: rgb(201, 201, 22);}
+      50%  {background: rgb(26, 26, 150);}
+      75%  {background: rgb(47, 112, 47);}
+      100% {background: rgb(236, 130, 130);}
+}
